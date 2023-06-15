@@ -1,21 +1,104 @@
 @charset "UTF-8";
 * {
     box-sizing: border-box;
-    margin: 5px;
+    margin: 0;
     padding: 0;
 }
 
 body {
     background-color: #242D34;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .card {
-    background-color: white;
+    background-color: black;
+    color: white;
+    margin: 60px auto;
+    border-radius: 10px;
+    width: calc(320px + 8%);
+    min-height: 480px;
+    padding: 10px 50px;
+    text-align: center;
+}
+
+.twitterLogo {
+    width: 36px;
+    margin: auto;
 }
 
 .content {
     display: flex;
     flex-direction: column;
+    /* background-color: #067f94b2; */
+    padding-top: 20px;
 }
 
+.loginButton {
+    margin: 9px 0;
+    padding: 5px;
+    border-radius: 100px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttonImg {
+    height: 26px;
+    margin-right: 8px;
+}
 
+.userInput {
+    padding: 9px;
+    background-color: black;
+    color: white;
+    border: 1px solid gray;
+    border-radius: 8px;
+}
+
+.userInput::placeholder {
+    color: gray;
+}
+
+.avancar, .esqueceuSenha {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 100px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.avancar {
+    background-color: white;
+    color: black;
+}
+
+.esqueceuSenha {
+    background-color: black;
+    color: white;
+    border: 1px solid lightslategray;
+    font-size: .9em;
+}
+
+.inscreva-se {
+    color: gray;
+    margin-top: 25px;
+}
+
+.inscreva-se a{
+    color: #1677B8;
+    text-decoration: none;
+}
+.inscreva-se a:hover{
+    color: #1677B8;
+    text-decoration: underline;
+}
+
+.buttonsHover:hover {
+    filter: invert(9%);
+    cursor: pointer;
+}
+
+.siteOriginal {
+    color: darkblue;
+    display: block;
+    margin-top: 23px;
+}
