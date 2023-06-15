@@ -99,6 +99,11 @@ body {
     cursor: pointer;
 }
 
+.buttonsHover:active {
+    box-shadow: inset 0px 0px 3px 2px #00000056;
+    filter: invert(5%);
+}
+
 .siteOriginal {
     color: darkblue;
     display: block;
